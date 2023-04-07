@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --font-padrao: 'Open Sans', sans-serif;
+    --font-destaque: 'Forum', cursive;
+    --cor1: #E17576;
+    --cor2: #E7E3D0;
+    --cor-texto: #1E1E1E;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+header{
+    background-color: var(--cor1);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.323);
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 100px;
+    border-color: transparent transparent var(--cor2) transparent;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -4rem;
+    left: -7.3rem;
+
+  }
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 72px;
+    height: 72px;
+    z-index: 1;
+}
+
+.logo h1{
+    margin-left: 3rem;
+    font-family: var(--font-destaque);
+    font-size: 5.5rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 2.5rem;
+    font-family: var(--font-padrao);
+    font-weight: lighter;
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+
+.nav-link:hover{
+    background-color: var(--cor2);
+    padding: 0.5rem 1rem;
+    color: var(--cor-texto);
+}
+
+#icon-hamburguer{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+@media(max-width:1350px){
+
+    .logo h1{
+        font-size: 4.5rem;
+    }
+
+    .logo h1{
+        margin-left: 1.5rem;
+    }
+    .nav-link{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:1020px){
+    
+    .nav-list{
+        display: none;
+    }
+
+    .mobile-menu ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+    }
+
+    #icon-hamburguer{
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    .mobile-menu .nav-item{
+        margin: 1.5rem 0rem;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+@media (max-width:545px){
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h1{
+        font-size: 2.5rem;
+    }
+
+    #icon-hamburguer{
+        margin-left: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .triangulo {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 60px 60px 60px;
+        border-color: transparent transparent var(--cor2) transparent;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: -1.4rem;
+        left: -4rem;
+    
+      }
+}
+
+
+
+
