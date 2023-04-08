@@ -190,10 +190,6 @@ aside i{
     justify-content: space-evenly;
 }
 
-.conteudo-about{
- 
-}
-
 .conteudo-about h1{
     color: white;
     font-family: var(--font-destaque);
@@ -214,6 +210,67 @@ aside i{
     display: flex;
     align-items: center;
 }
+
+/* ==============
+    TRABALHOS
+============== */
+
+#trabalhos{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* justify-content: center; */
+    /* align-items: start; */
+    
+}
+
+#trab-conteudo{
+    display: flex;
+    align-self: center;
+}
+
+
+#trabalhos h1{
+    font-family: var(--font-padrao);
+    font-size: 4rem;
+    font-weight: lighter;
+    background-color: var(--cor1);
+    color: white;
+    max-width: 350px;
+    text-align: center;
+    margin: 3rem 0 5rem 0;
+    /* margin-left: 8.5rem; */
+}
+
+#trab-img{
+    display: flex;
+    width: 90vw;
+
+}
+
+.trab-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px 50px;
+}
+
+.painel{
+    border-radius: 20px;
+    cursor: pointer;
+    max-width: 100%;
+    
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.painel:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 /* ==============
     MEDIA QUERIES
 ============== */
@@ -264,6 +321,13 @@ aside i{
         height: 40rem;
     }
 
+    /* ==============
+        TRABALHOS
+    ============== */
+
+    /* #trabalhos h1{
+        margin-left: 2rem;
+    } */
 }
 
 @media(max-width:1020px){
@@ -401,6 +465,14 @@ aside i{
     .img-about img{
         width: 30rem;
         height: 30rem;
+    }
+
+    /* ==============
+        TRABALHO
+    ============== */ 
+
+    #trabalhos h1{
+        font-size: 3rem;
     }
 }
 
