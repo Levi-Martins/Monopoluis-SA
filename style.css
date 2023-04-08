@@ -163,8 +163,6 @@ main{
     max-height: 100%;
     width: 490px;
     height: 490px; 
-    
-
 }
 
 /* ==============
@@ -181,6 +179,41 @@ aside i{
     font-size: 3rem;
 }
 
+/* ==============
+       About
+============== */
+#about{
+    background-image: url(img/fundo-about.jpg);
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteudo-about{
+ 
+}
+
+.conteudo-about h1{
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 6.4rem;
+    font-weight: lighter;
+    padding: 4rem 4rem;
+    white-space: nowrap;
+}
+
+.conteudo-about p{
+    color: white;
+    font-family: var(--font-padrao);
+    padding: 1rem 4rem;
+    max-width: 59rem;
+    text-align: justify;
+}
+.img-about{
+    display: flex;
+    align-items: center;
+}
 /* ==============
     MEDIA QUERIES
 ============== */
@@ -223,6 +256,14 @@ aside i{
         padding: 1rem 2rem;
         font-size: 2rem;
     }
+    /* ==============
+        About
+    ============== */
+    .img-about img{
+        width: 40rem;
+        height: 40rem;
+    }
+
 }
 
 @media(max-width:1020px){
@@ -296,7 +337,16 @@ aside i{
 
     aside{
         margin-top: 3rem;
+        padding: 0 2rem;
         font-size: 1.6rem;
+    }
+
+    /* ==============
+        About
+    ============== */
+    #about{
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -332,6 +382,26 @@ aside i{
         left: -4rem;
     
       }
+
+    /* ==============
+        About
+    ============== */       
+
+    .conteudo-about h1{
+        padding: 2rem 0 0 0;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .conteudo-about p{
+      font-size: 1.3rem;
+      text-align: center;
+
+    }
+
+    .img-about img{
+        width: 30rem;
+        height: 30rem;
+    }
 }
 
 
