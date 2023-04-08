@@ -168,6 +168,20 @@ main{
 }
 
 /* ==============
+        Aside
+============== */
+
+aside{
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 2rem;
+}
+
+aside i{
+    font-size: 3rem;
+}
+
+/* ==============
     MEDIA QUERIES
 ============== */
 @media(max-width:1350px){
@@ -275,6 +289,14 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+/* ==============
+        Aside
+============== */
+
+    aside{
+        margin-top: 3rem;
+        font-size: 1.6rem;
     }
 }
 
