@@ -329,6 +329,64 @@ aside i{
     /* margin: 50px 150px; */
 }
 
+/* ==============
+        SUGESTOES
+    ============== */
+
+    #sugestoes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .form-sugestoes{
+        background-color: var(--cor2);
+        max-width: 1500px;
+        padding: 30px;
+    }
+
+    .form-sugestoes h1{
+        font-family: var(--font-destaque);
+        font-size: 4rem;
+        font-weight: lighter;
+    }
+
+    .form-sugestoes p{
+        font-family: var(--font-padrao);
+        font-size: 2.4rem;
+        color: black;
+        margin: 10px 0;
+    }
+
+    .text-form{
+        display: flex;  
+    }
+
+    .text-form p{
+        color: var(--cor1);
+    }
+
+    .text-form input{
+        background-color: var(--cor1);
+        border: none;
+        max-width: 1068px;
+        width: 487px;
+        max-height: 96px;
+        height: 47px;
+        margin: 10px;
+        font-size: 2rem;
+    }
+
+     .input-mensagem{
+        max-width: 1068px;
+        width:1068px ;
+        height: 96px;
+        background-color: #E17576;
+        border: none;
+    }
+
+
 
 /* ==============
     MEDIA QUERIES
@@ -409,6 +467,18 @@ aside i{
         row-gap: 50px;
         justify-content: center;
         align-items: center;
+    }
+
+    /* ==============
+        SUGESTOES
+    ============== */
+
+    .text-form{
+        flex-direction: column;  
+    }
+
+    .input-mensagem{
+        width:800px ;
     }
 }
 
@@ -494,6 +564,39 @@ aside i{
         align-items: center;
         flex-direction: column;
     }
+
+    /* ==============
+        SUGESTOES
+    ============== */
+    #sugestoes{
+        margin: 50px 0;
+    }
+}
+
+@media (max-width:865px){
+    .form-sugestoes h1{
+        font-size: 3rem;
+    }
+
+    .form-sugestoes p{
+        font-size: 1.6rem;
+    }
+
+    .text-form p{
+        color: var(--cor1);
+    }
+
+    .text-form input{
+        width: 400px;
+        height: 37px;
+        margin: 10px;
+        font-size: 1.6rem;
+    }
+
+    .input-mensagem{
+        width:500px ;
+        height: 80px;
+    }
 }
 
 @media (max-width:545px){
@@ -576,6 +679,29 @@ aside i{
 
     .bloco-conteudo p{
         font-size: 1.8rem;
+    }
+
+    /* ==============
+        SUGESTOES
+    ============== */
+
+    .form-sugestoes h1{
+        text-align: center;
+    }
+
+    .form-sugestoes p{
+        text-align: center;
+    }
+
+    .text-form input{
+        width: 280px;
+        height: 37px;
+        font-size: 1.6rem;
+    }
+
+    .input-mensagem{
+        width:280px ;
+        height: 80px;
     }
 }
 
