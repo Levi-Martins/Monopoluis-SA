@@ -273,6 +273,64 @@ aside i{
 }
 
 /* ==============
+    MIRACLE
+============== */
+
+#miracle{
+    background-image: url(img/fundo-miracle.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.conteudo-miracle{
+    text-align: center;
+}
+
+.conteudo-miracle h1{
+    background-color: white;
+    color: var(--cor1);
+    font-family: var(--font-destaque);
+    font-weight: lighter;
+    font-size: 10rem;
+
+    margin: auto;
+    max-width: 400px;
+    max-height: 100px;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.393);
+}
+
+.conteudo-miracle p{
+    margin: 10px;
+    font-size: 2.4rem;
+    color: white;
+    font-family: var(--font-padrao);
+}
+
+.bloco-conteudo{
+    display: flex;
+    row-gap: 50px;
+}
+
+.bloco-conteudo p{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    font-size: 2rem;
+    padding: 15px;
+    max-width: 400px;
+    margin-top: 60px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.204);
+    /* margin: 20px 40px; */
+    /* margin: 50px 150px; */
+}
+
+
+/* ==============
     MEDIA QUERIES
 ============== */
 @media(max-width:1350px){
@@ -323,12 +381,35 @@ aside i{
     }
 
     /* ==============
-        TRABALHOS
+        MIRACLE
     ============== */
+    .conteudo-miracle h1{
+        font-size: 8rem;
+    }
 
-    /* #trabalhos h1{
-        margin-left: 2rem;
-    } */
+    .bloco-conteudo p{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:1152px){
+    #miracle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-miracle h1{
+        margin-top: 30px;
+    }
+    .bloco-conteudo{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media(max-width:1020px){
@@ -474,6 +555,27 @@ aside i{
 
     #trabalhos h1{
         font-size: 3rem;
+    }
+
+    /* ==============
+        MIRACLE
+    ============== */ 
+
+    .img-miracle img{
+        width: 400px;
+        height: 496px;
+    }
+
+    .conteudo-miracle h1{
+        font-size: 6rem;
+    }
+
+    .conteudo-miracle p{
+        font-size: 2.2rem;
+    }
+
+    .bloco-conteudo p{
+        font-size: 1.8rem;
     }
 }
 
