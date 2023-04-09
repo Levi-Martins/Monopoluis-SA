@@ -185,7 +185,8 @@ aside i{
 #about{
     background-image: url(img/fundo-about.jpg);
     background-repeat: no-repeat;
-
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     justify-content: space-evenly;
 }
