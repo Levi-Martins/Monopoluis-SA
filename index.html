@@ -103,7 +103,49 @@
                 </form>
             </div>
         </section>
+        <section id="FAQ">
+            <div class="faq-titulo">
+                <h1>FAQ</h1>
+            </div>
+            <div id="conteudo-faq">
+                <div class="pergunta">
+                    <p>Lorem ipsum dolor sit amet? <i class="fa-solid fa-chevron-down simbolo"></i></p>
+                    <div class="resposta">
+                        <p>Est illo quos aut accusantium dolor est repudiandae reiciendis</p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <p>Consectetur adipiscing elit sit amet sapien quis orci placerat consectetur et non dui? <i class="fa-solid fa-chevron-down simbolo"></i></p>
+                    <div class="resposta">
+                        <p>Est illo quos aut accusantium dolor est repudiandae reiciendis et ullam consectetur</p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <p>Quisque sollicitudin aliquet libero? <i class="fa-solid fa-chevron-down simbolo"></i></p>
+                    <div class="resposta">
+                        <p>Lorem ipsum dolor sit amet. Ea eaque voluptatibus cum voluptas n </p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <p>Vestibulum porta augue vel erat imperdiet? <i class="fa-solid fa-chevron-down simbolo" ></i></p>
+                    <div class="resposta">
+                        <p>Est illo quos aut accusantium dolor est repudiandae reiciendis et ullam consectetur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="img-footer">
+            <img src="img/logo.png" alt="">
+            <h1>MONOPOLIUS SA.</h1>
+        </div>
+        <div class="conteudo-footer">        
+            <p><i class="fa-solid fa-envelope"></i> monopolius@mail.com</p>
+            <p><i class="fa-solid fa-phone"></i> (99) 99999-9999</p>
+        </div>
+
+    </footer>
 
 
     <script>
@@ -118,6 +160,14 @@
             } else {
                 i[0].classList.replace('fa-x', 'fa-bars');
             }
+        })
+
+        const pergunta = document.querySelectorAll('.pergunta')
+        
+        pergunta.forEach(e=>{
+            e.addEventListener('click',()=>{
+                e.classList.toggle('active')
+            })
         })
 
     </script>
